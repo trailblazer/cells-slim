@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gem "appraisal"
 gem "minitest-reporters"
-gem "cells", :github => "seuros/cells"
+gem 'cells', github: 'apotonick/cells', branch: 'cells-4'
 gem "railties", :github => "rails/rails", :branch => "4-2-stable"
 gem "activemodel", :github => "rails/rails", :branch => "4-2-stable"
 gem "minitest", "~> 5.2"
