@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in cells-slim.gemspec
 gemspec
 
-gem 'pry-byebug'  , platforms: [:mri_20, :mri_21]
-gem 'appraisal'
-gem 'minitest-reporters'
-gem 'cells', github: 'apotonick/cells', branch: 'cells-4'
+
+gem "railties", "~> 4.2.0"
+gem "activemodel"
+gem "minitest", "~> 5.2"
+
+gem 'cells', path: "../cells"
