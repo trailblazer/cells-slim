@@ -1,25 +1,25 @@
-Word.
+| Word.
 
-= form_tag "/erubis/is/horribly/outdated" do
+= form_tag "/erubis/is/horribly/outdated"
   = text_field_tag :id
-  = link_to "/rails/sucks" do
-    hallo
+  = link_to "/rails/sucks"
+    | hallo
 
-  = content_tag(:ul) do
-    Hallo
+  = content_tag(:ul)
+    | Hallo
 
 - answer = "<script>oui!</script>"
 
--# test content rendering in capture.
-- content = capture do
-  Bonjour!
+/ test content rendering in capture.
+- content = capture
+  | Bonjour!
   = link_to "Coffee?", "/coffee"
-  <b>Yes please!</b>
-  = answer
+  b Yes please!
+  == answer
 
-Weiter!
+| Weiter!
 
-= content
+== content
 
 - breadcrumbs = capture do
   - [link_to("1", "/1"), link_to("2", "/2")].join("+")
