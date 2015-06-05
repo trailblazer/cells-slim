@@ -5,20 +5,13 @@ class SlimTest < MiniTest::Spec
   let (:song_cell) { SongCell.new(controller) }
 
   # render in render
-  it { song_cell.(:render_in_render).must_equal "<b>Questions: Yes!</b>\n" }
-
-  # URL helpers work in cell instance.
-  it { song_cell.songs_path.must_equal "/songs" }
+  it("bla") { song_cell.(:render_in_render).must_equal "<b>Questions: Yes!</b>" }
 
   # content_tag { }
-  it { song_cell.(:with_content_tag).must_equal "<div>Beachparty</div>\n" }
+  it { song_cell.(:with_content_tag).must_equal "<div>Beachparty</div>" }
 
   # content_tag { content_tag { } }
-  it do song_cell.(:with_content_tag_and_content_tag).must_equal %{<span>Title:
-<div>Still Knee Deep
-</div>
-</span>
-}
+  it do song_cell.(:with_content_tag_and_content_tag).must_equal %{<span>Title:<div>Still Knee Deep</div></span>}
   end
 
   # form_tag { content_tag { } }
@@ -53,7 +46,7 @@ Bonjour!
 #{form_with_body_tag}
 #{form_for_tag}
 </form>
-}
+}.gsub("\n", "").gsub("  ", "")
   end
 
 end
