@@ -1,5 +1,5 @@
-require 'slim'
-require 'cells'
+require "slim"
+require "cells"
 
 module Cell
   module Slim
@@ -14,10 +14,10 @@ module Cell
       {
         template_class: ::Slim::Template,
         suffix:         "slim",
-        :disable_escape => true,
-        :escape_code => false,
-        :use_html_safe => false,
-        buffer: "@output_buffer"
+        disable_escape: true,
+        escape_code:    false,
+        use_html_safe:  false,
+        buffer:         "@output_buffer"
       }
     end
 

@@ -6,6 +6,6 @@ require_relative 'dummy/config/environment'
 require "rails/test_help" # adds stuff like @routes, etc.
 
 require "cell/railtie"
-require 'cells/slim'
+require 'cell/slim'
 
 # Cell::ViewModel.send :include, Cell::Slim

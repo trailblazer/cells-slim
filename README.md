@@ -1,6 +1,6 @@
 # Cells::Slim
 
-TODO: Write a gem description
+Support for Slim templates with Cells.
 
 ## Installation
 
@@ -10,22 +10,15 @@ Add this line to your application's Gemfile:
 gem 'cells-slim'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install cells-slim
-
 ## Usage
 
-TODO: Write usage instructions here
+Outside of Rails, you need to include `Cell::Erb` in your cell.
 
-## Contributing
+```ruby
+class CommentCell < Cell::ViewModel
+  include Cell::Slim
+```
 
-1. Fork it ( https://github.com/trailblazer/cells-slim/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+## Documentation
+
+[More documentation](http://trailblazerb.org/gems/cells/templates.html) can be found on the Trailblazer page.
