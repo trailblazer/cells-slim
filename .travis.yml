@@ -11,4 +11,3 @@ script: bundle exec rake
 
 gemfile:
   - gemfiles/rails4.2.gemfile
-  - gemfiles/rails4.1.gemfile

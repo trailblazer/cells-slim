@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "cells", "4.0.0.beta6"
-gem "railties", "~> 4.1.0"
+gem "railties", "~> 4.2.0"
 gem "minitest", "~> 5.2"
 
 gemspec :path => "../"
