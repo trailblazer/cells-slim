@@ -12,7 +12,7 @@ gem 'cells-slim'
 
 ## Usage
 
-Outside of Rails, you need to include `Cell::Erb` in your cell.
+Outside of Rails, you need to include `Cell::Slim` in your cell.
 
 ```ruby
 class CommentCell < Cell::ViewModel
