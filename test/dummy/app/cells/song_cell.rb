@@ -55,4 +55,11 @@ private
       "<b>No current page!<b>".html_safe
     end
   end
+
+  def concatting
+    content_tag :div do
+      concat content_tag :p, "Concat!"
+      concat "Whoo"
+    end
+  end
 end

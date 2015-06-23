@@ -33,7 +33,7 @@ class SlimTest < MiniTest::Spec
   #{input_tag}
   <a href=\"/rails/sucks\">hallo
   </a>
-  <ul>Hallo
+  <ul data-x="{&quot;a&quot;:&quot;1&quot;}">Hallo
   </ul>
 </form>
 Weiter!
@@ -46,6 +46,7 @@ Bonjour!
 #{form_with_body_tag}
 #{form_for_tag}
 </form>
+<div><p>Concat!</p>Whoo</div>
 }.gsub("\n", "").gsub("  ", "")
   end
 

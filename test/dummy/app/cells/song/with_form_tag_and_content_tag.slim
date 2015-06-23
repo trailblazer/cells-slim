@@ -5,7 +5,7 @@
   = link_to "/rails/sucks"
     | hallo
 
-  = content_tag(:ul)
+  = content_tag(:ul, "data-x" => '{"a":"1"}')
     | Hallo
 
 - answer = "<script>oui!</script>"
@@ -32,3 +32,5 @@
 
 = form_for OpenStruct.new, url: "/", as: "open" do |f|
   = f.text_field :id
+
+= concatting
