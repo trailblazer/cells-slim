@@ -54,13 +54,16 @@ module Cell
       "#{tag(:form, html_options, true) + extra_tags}"
     end
 
-    # Rails 4.0, TagHelper.
-    def tag_option(key, value, escape)
-      super(key, value, false)
+    def tag_options(options, escape = true)
+      super(options, true)
     end
 
     def content_tag_string(name, content, options, escape=true)
       super(name, content, options, false)
+    end
+
+    def concat(string)
+      @output_buffer << string
     end
   end
 end
