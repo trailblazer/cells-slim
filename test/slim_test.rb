@@ -31,7 +31,9 @@ class SlimTest < MiniTest::Spec
     song_cell.(:with_form_tag_and_content_tag).must_equal %{Word.
 #{form_tag}
   #{input_tag}
-  <a href=\"/rails/sucks\">hallo
+  <a href=\"/rails/sucks\">
+  hallo
+  <div class="row">Cool</div>
   </a>
   <ul data-x="{&quot;a&quot;:&quot;1&quot;}">Hallo
   </ul>
