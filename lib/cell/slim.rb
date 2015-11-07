@@ -64,6 +64,7 @@ module Cell
 
     def concat(string)
       @output_buffer << string
+      self
     end
   end
 end
