@@ -52,4 +52,10 @@ Bonjour!
 }.gsub("\n", "").gsub("  ", "")
   end
 
+  it 'allows concatenation chains' do
+    song_cell.capture do
+      song_cell.concat('Lorem').concat('ipsum')
+    end
+  end
+
 end
