@@ -1,3 +1,7 @@
+# 0.0.3
+
+* Make Rails optional. This allows using cells-slim in other frameworks like [Sinatra](https://github.com/apotonick/gemgem-sinatra).
+
 # 0.0.2
 
 * Updates for Cells 4: Fixes output_buffer.
