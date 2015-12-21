@@ -31,9 +31,11 @@ class SlimTest < MiniTest::Spec
     song_cell.(:with_form_tag_and_content_tag).must_equal %{Word.
 #{form_tag}
   #{input_tag}
-  <a href=\"/rails/sucks\">hallo
+  <a href=\"/rails/sucks\">
+  hallo
+  <div class="row">Cool</div>
   </a>
-  <ul>Hallo
+  <ul data-x="{&quot;a&quot;:&quot;1&quot;}">Hallo
   </ul>
 </form>
 Weiter!
@@ -46,7 +48,14 @@ Bonjour!
 #{form_with_body_tag}
 #{form_for_tag}
 </form>
+<div><p>Concat!</p>Whoo</div>
 }.gsub("\n", "").gsub("  ", "")
+  end
+
+  it 'allows concatenation chains' do
+    song_cell.capture do
+      song_cell.concat('Lorem').concat('ipsum')
+    end
   end
 
 end
