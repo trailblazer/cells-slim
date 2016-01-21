@@ -8,4 +8,4 @@ gem "railties", "~> 4.2.0"
 gem "activemodel"
 gem "minitest", "~> 5.2"
 
-gem 'cells', path: "../cells"
+# gem 'cells', path: "../cells"
