@@ -3,7 +3,6 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'cell/slim/version'
 
-
 Gem::Specification.new do |spec|
   spec.name          = 'cells-slim'
   spec.version       = Cell::Slim::VERSION
@@ -18,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test)/})
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'cells', '~> 4.0.0.beta6'
+  spec.add_runtime_dependency 'cells', '~> 4.0'
   spec.add_runtime_dependency 'slim', '~> 3.0'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
