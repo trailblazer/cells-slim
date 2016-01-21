@@ -58,4 +58,10 @@ Bonjour!
     end
   end
 
+  describe "block capture" do
+    it do
+      song_cell.(:with_capture).must_equal %{Hallo<p>More</p>Hidden!}
+    end
+  end
+
 end

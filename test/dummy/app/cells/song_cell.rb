@@ -44,6 +44,10 @@ class SongCell < Cell::ViewModel
     render
   end
 
+  def with_capture
+    render
+  end
+
 private
   def cap
     "yay, #{with_output_buffer { yield } }"
