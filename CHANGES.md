@@ -1,3 +1,7 @@
+# 0.0.5
+
+* Restrict to Cells < 5.0.0.
+
 # 0.0.4
 
 * Make Rails optional. This allows using cells-slim in other frameworks like [Sinatra](https://github.com/apotonick/gemgem-sinatra).
