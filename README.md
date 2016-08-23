@@ -21,4 +21,4 @@ class CommentCell < Cell::ViewModel
 
 ## Documentation
 
-[More documentation](http://trailblazerb.org/gems/cells/templates.html) can be found on the Trailblazer page.
+[More documentation](http://trailblazer.to/gems/cells/templates.html) can be found on the Trailblazer page.
