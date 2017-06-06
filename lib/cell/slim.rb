@@ -20,10 +20,5 @@ module Cell
         buffer:         "@output_buffer"
       }
     end
-
-    if Object.const_defined?(:ActionView)
-      require "cell/slim/rails"
-      include Cell::Slim::Rails
-    end
   end
 end

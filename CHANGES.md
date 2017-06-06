@@ -1,3 +1,7 @@
+## 0.1.0 
+
+* Drop support for rails. Add cells-rails in addition to this gem
+
 # 0.0.5
 
 * Restrict to Cells < 5.0.0.
