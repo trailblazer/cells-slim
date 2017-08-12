@@ -53,4 +53,4 @@ This can be put in **config/application.rb**.
 
 ## Documentation
 
-[More documentation](http://trailblazerb.org/gems/cells/templates.html) can be found on the Trailblazer page.
+[More documentation](http://trailblazer.to/gems/cells/templates.html) can be found on the Trailblazer page.
