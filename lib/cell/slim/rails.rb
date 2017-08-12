@@ -37,12 +37,12 @@ module Cell
         "#{tag(:form, html_options, true) + extra_tags}"
       end
 
-      def tag_options(options, escape = true)
-        super(options, true)
+      def tag(name = nil, options = nil, open = false, escape = true)
+        super(name, options, open, true)
       end
 
-      def content_tag_string(name, content, options, escape=true)
-        super(name, content, options, false)
+      def content_tag(name, content_or_options_with_block = nil, options = nil, escape = true, &block)
+        super(name, content_or_options_with_block, options, false, &block)
       end
 
       def concat(string)

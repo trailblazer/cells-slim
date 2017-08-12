@@ -1,3 +1,7 @@
+# 0.0.6
+
+* Rails 5.1 compatibility
+
 # 0.0.5
 
 * Restrict to Cells < 5.0.0.
