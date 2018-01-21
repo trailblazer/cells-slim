@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 
-gem "railties", "~> 4.2.0"
+gem "railties", "~> 5.1.4"
 gem "activemodel"
 gem "minitest", "~> 5.2"
 
