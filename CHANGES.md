@@ -1,6 +1,7 @@
 # 0.0.6
 
 * Rails 5.1 compatibility
+* `cells` is now explicitly required as a dependency
 
 # 0.0.5
 
