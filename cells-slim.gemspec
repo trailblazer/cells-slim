@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Slim integration for Cells."
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/trailblazer/cells-slim"
-  spec.license       = "MIT"
+  spec.license       = "LGPL-3.0"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.test_files    = spec.files.grep(%r{^(test)/})
