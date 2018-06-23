@@ -1,11 +1,14 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 # Specify your gem's dependencies in cells-slim.gemspec
 gemspec
 
-
-gem "railties", "~> 4.2.0"
 gem "activemodel"
-gem "minitest", "~> 5.2"
+gem "railties"
 
-# gem 'cells', path: "../cells"
+case ENV["GEMS_SOURCE"]
+  when "local"
+    gem "cells", path: "../cells"
+  when "github"
+    gem "cells", github: "trailblazer/cells"
+end
