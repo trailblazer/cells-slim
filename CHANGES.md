@@ -1,3 +1,7 @@
+# 0.1.0
+* Drop all rails hacks , add 'cells-rails' for all the rails witchcraft.
+* Introduce ViewModelSlim
+
 # 0.0.6
 
 * Rails 5.1 compatibility
