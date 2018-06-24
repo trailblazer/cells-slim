@@ -44,7 +44,7 @@ end
 
 This can be put in **config/application.rb**.
 
-**Remember** that you need to use '==' instead of '=' ([reference in Slim docs](http://www.rubydoc.info/gems/slim/frames#Output_without_HTML_escaping___)) in your templates for code which should not be escaped, for example form_builder (notice that only from_for line require '=='):
+**Remember** that you need to use '==' instead of '=' ([reference in Slim docs](http://www.rubydoc.info/gems/slim/frames#Output_without_HTML_escaping___)) in your templates for code which should not be escaped, for example form_builder (notice that only form_for line require '=='):
 ```
 == form_for model, url: users_path, method: method do |f|
   = f.text_field :first_name
