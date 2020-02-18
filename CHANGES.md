@@ -1,3 +1,7 @@
+# 0.1.1
+
+* Support `slim` 4.0 and up, too.
+
 # 0.1.0
 * Drop all rails hacks , add 'cells-rails' for all the rails witchcraft.
 * Introduce ViewModelSlim
